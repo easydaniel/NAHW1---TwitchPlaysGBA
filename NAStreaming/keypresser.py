@@ -16,8 +16,8 @@ class keyPresser():
                 'l':'a',
                 'r':'c'}
 
-
-        k.press_key(keyMap[key])
-        sleep(0.1)
-        k.release_key(keyMap[key])
+        if (key in keyMap):
+            k.press_key(keyMap[key])
+            sleep(0.1)
+            k.press_key(keyMap[key])
 
