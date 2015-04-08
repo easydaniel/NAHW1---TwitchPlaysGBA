@@ -119,7 +119,7 @@ while gameStart:
                 for j in countVote.keys():
                     if countVote[j] == max(countVote.keys(),key= lambda x:countVote[x]):
                         execCommand = j
-            logging.info('Execute command: '+execCommand)
+            logging.info('Execute command: ' + execCommand)
             for i in execCommand:
                 keypresser.pressKey(i)
 
